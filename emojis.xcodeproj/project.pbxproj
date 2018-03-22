@@ -20,6 +20,7 @@
 		A957BB702062FE4D00CD34D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A957BB6F2062FE4D00CD34D8 /* ExtensionDelegate.swift */; };
 		A957BB722062FE4D00CD34D8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A957BB712062FE4D00CD34D8 /* NotificationController.swift */; };
 		A957BB742062FE4D00CD34D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A957BB732062FE4D00CD34D8 /* Assets.xcassets */; };
+		A957BB852063019D00CD34D8 /* MyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A957BB842063019D00CD34D8 /* MyRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		A957BB732062FE4D00CD34D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A957BB752062FE4D00CD34D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A957BB762062FE4D00CD34D8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A957BB842063019D00CD34D8 /* MyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A957BB6D2062FE4D00CD34D8 /* InterfaceController.swift */,
+				A957BB842063019D00CD34D8 /* MyRow.swift */,
 				A957BB6F2062FE4D00CD34D8 /* ExtensionDelegate.swift */,
 				A957BB712062FE4D00CD34D8 /* NotificationController.swift */,
 				A957BB732062FE4D00CD34D8 /* Assets.xcassets */,
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A957BB852063019D00CD34D8 /* MyRow.swift in Sources */,
 				A957BB722062FE4D00CD34D8 /* NotificationController.swift in Sources */,
 				A957BB702062FE4D00CD34D8 /* ExtensionDelegate.swift in Sources */,
 				A957BB6E2062FE4D00CD34D8 /* InterfaceController.swift in Sources */,

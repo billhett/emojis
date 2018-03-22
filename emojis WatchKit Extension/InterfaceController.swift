@@ -12,10 +12,21 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var emojiTable: WKInterfaceTable!
+    var allTheEmojis = ["😎", "😍", "🤠", "🍸", "🍼", "🍷", "🚜", "🚡", "🚂"]
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        self.emojiTable.setNumberOfRows(self.allTheEmojis.count, withRowType: "myRow")
         // Configure interface objects here.
+        for emojiIndex in 0...(self.allTheEmojis.count-1) {
+            var tableRow = self.emojiTable.rowController(at: emojiIndex) as! MyRow
+            tableRow.emojiLabel.setText(allTheEmojis[emojiIndex])
+        }
+        
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        self.pushController(withName: "EmojiDetail", context: nil)
     }
     
     override func willActivate() {
@@ -28,4 +39,5 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    
 }
