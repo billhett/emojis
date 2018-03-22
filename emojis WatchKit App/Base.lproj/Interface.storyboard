@@ -39,7 +39,18 @@
         <!--EmojiDetail-->
         <scene sceneID="3Yy-BO-b73">
             <objects>
-                <controller identifier="EmojiDetail" id="BXZ-Le-52f"/>
+                <controller identifier="EmojiDetail" id="BXZ-Le-52f" customClass="EmojiDetailInterfaceController" customModule="emojis_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="😍" textAlignment="center" id="wEV-Uo-2WG">
+                            <fontDescription key="font" type="system" pointSize="100"/>
+                        </label>
+                        <label width="1" alignment="left" text="This is emoji definition" textAlignment="center" numberOfLines="0" id="EDi-UP-OuG"/>
+                    </items>
+                    <connections>
+                        <outlet property="bigEmojiLabel" destination="wEV-Uo-2WG" id="BSQ-Dr-CB3"/>
+                        <outlet property="emojiDefinitionLabel" destination="EDi-UP-OuG" id="hbO-NK-c8k"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="493" y="304"/>
         </scene>
